@@ -1,0 +1,102 @@
+body{
+
+	background:linear-gradient(to left,orange,black);
+	margin-left:300px;
+	margin-top:60px;
+	background-position: center;
+}
+.animation{
+	font-size:40px;
+	margin: 0;
+	padding:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.animation span{
+ display: table-cell;
+ padding: 0;
+ margin:0;
+ color:white;
+ position: relative;
+ top: -30px;
+ left: -200px;
+ bottom: -90px;
+ opacity:1;
+ font-weight:bold;
+ animation: animate 1.8s linear infinite;
+
+}
+.animation span:nth-child(1){
+	animation-delay: 0s;
+}
+.animation span:nth-child(2){
+	animation-delay: 0.25s;
+}
+.animation span:nth-child(3){
+	animation-delay: 0.5s;
+}
+.animation span:nth-child(4){
+	animation-delay: 0.75s;
+}
+.animation span:nth-child(5){
+	animation-delay: 1s;
+}
+.animation span:nth-child(6){
+	animation-delay: 1.25s;
+}
+.animation span:nth-child(7){
+	animation-delay: 1.5s;
+}
+@keyframes animate{
+	0%,100%{
+		opacity: 1;
+		color:deeppink; 
+	}
+	5%,95%{
+		opacity: 1;
+		color:pink;
+		text-shadow: none; 
+	}
+}
+
+#kilograme,#gram,#millegram{
+	width: 250px;
+	height:50px;
+	background-color: black;
+	margin:10px;
+	color: red;
+	left:200px;
+	position: relative;
+}
+#container input[type="number"]{
+	color: white;
+	width: 250px;
+	height:50px;
+	background-color:black;
+	position: relative;
+	left: 210px;
+}
+.kilo{
+	position: relative;
+	left:115px;
+	bottom:55px;
+	font-size: 18px;
+	color:skyblue;
+}
+.gramm{
+	position: relative;
+	left:170px;
+	bottom:55px;
+	font-size: 18px;
+	color:skyblue;
+
+}
+.mille{
+	position: relative;
+	left:107px;
+	bottom:55px;
+	font-size: 18px;
+	color:skyblue;
+
+}

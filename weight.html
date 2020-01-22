@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weight converter</title>
+    <meta charset="utf-8">
+    <meta name="Oladayo Ahmod">
+	<link rel="stylesheet" type="text/css" href="weight.css">
+	<style>
+      .div{
+      	top:50px;
+      	left: -500px;
+      	position: relative;
+      	float: right;
+      }
+    #inputing{
+	position: relative;
+	left: -120px;
+	top: 15px;
+	width: 220px;
+	height: 43px;
+	background-color: white;
+}
+.support{
+	width: 120px;
+	height: 49px;
+	position: relative;
+	left: -120px;
+	top: 15px;
+	border: none;
+	margin-left: -10px;
+	background-color: deeppink;
+	color: white;
+}
+h4{
+	font-weight: bolder;
+	font-size: 23px;
+	color: grey;
+	position: relative;
+	bottom: -50px;
+	left: 170px;
+	font-family: sans-serif;
+}
+@media screen and (max-width:700px ){
+	
+}
+    </style>
+	<script type="text/javascript" src="weight.js"></script>
+</head>
+<body>
+	<div class="animation">
+      <span>U</span>
+      <span>n</span>
+      <span>i</span>
+      <span>t</span>
+      <span>e</span>
+      <span>c</span>
+      <span>h</span>
+</div>
+	<div id="container">
+	<input id="input" type="number" name="weightconverter" placeholder="Enter value..">
+	<div id="kilograme"></div><small class="kilo">Kilogramme</small>
+	<div id="gram"></div><small class="gramm">gram</small>
+	<div id="millegram"></div><small class="mille">Ounces</small>
+</div>
+	  <h4>Know your date of birth today</h4>
+    <div class="div">
+    	<input type="email" name="Email" id="inputing" placeholder="Enter your real age">:<button onclick="show()" class="support">My year of birth</button>
+          </div>
+	<script type="text/javascript">
+		document.getElementById("input").addEventListener('input', function(convert){
+       let conv = convert.target.value;
+       document.getElementById("gram").innerHTML = conv/0.0022046;
+       document.getElementById("kilograme").innerHTML = conv/2.2046;
+       document.getElementById("millegram").innerHTML = conv*16;
+   })
+
+
+			</script>
+</body>
+</html>
